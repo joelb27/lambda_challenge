@@ -13,6 +13,9 @@ document
 			specialRequests: document.getElementById('specialRequests').value,
 		};
 
+		document.getElementById('message').textContent =
+			'Submitting Registration...';
+
 		fetch('https://n0a5etlzc5.execute-api.us-west-2.amazonaws.com/test', {
 			method: 'POST',
 			headers: {
@@ -25,3 +28,4 @@ document
 				document.getElementById('message').textContent = data.message;
 			});
 	});
+document.getElementById('message').classList.add('active');

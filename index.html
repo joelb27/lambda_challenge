@@ -8,8 +8,9 @@
 </head>
 <body>
   <h1>Event Registration</h1>
-  <form id="registrationForm">
 
+  <form id="registrationForm">
+<div class="container">
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" name="firstName" required>
 
@@ -35,9 +36,12 @@
     <label for="specialRequests">Special Requests:</label>
     <textarea id="specialRequests" name="specialRequests" rows="5" cols="40"></textarea>
 
-    <button type="submit">Submit</button>
+    <div id="message"></div>
 
+    <button type="submit">Submit</button>
+</div>
   </form>
+
 
   <div id="message"></div>
 
