@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Event Registration</h1>
+  <form id="registrationForm">
+
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="eventDate">Event Date:</label>
+    <input type="date" id="eventDate" name="eventDate" required>
+
+    <label for="numTickets">Number Of Tickets:</label>
+    <input type="number" id="numTickets" name="numTickets" required>
+
+    <label for="session">Preffered Session:</label>
+    <select id="session" name="session" required>
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+      <option value="evening">Evening</option>
+    </select>
+
+    <label for="specialRequests">Special Requests:</label>
+    <textarea id="specialRequests" name="specialRequests" rows="5" cols="40"></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <div id="message"></div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
