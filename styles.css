@@ -1,6 +1,8 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
-  background-color: rgb(57, 53, 67);
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -8,80 +10,68 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #5c98bb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
-  color: #fff;
-  margin: 20px auto;
-  margin-bottom: 20px;
-  width: 300px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
   padding: 10px;
-  background-color: transparent;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-form {
-  margin: auto;
-  width: 400px;
-  border: 1px solid rgb(248, 251, 251);
-  background-color: #a29f9f;
-
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #f0f4f5;
+  box-shadow: 0 0 10px #9ccbde;
 }
 
-input, select, textarea {
-  display:block;
-  width: 90%;
-  margin: auto;
-  padding: 5px;
-  margin-bottom: 10px;
-  transition: background-color 0.3s ease;
-&:hover {
-    background-color: #626881;
-  }
-  }
-
-    input:focus,
-    select:focus,
-    textarea:focus {
-      background-color: #f5f5f5;
-    }
-
-
-
-
+input[type="submit"],
 button {
-    background-color: #338049;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3e6cd6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-    button:hover {
-      background-color: #29dc64;
-      transform: scale(1.05);
-    }
-
-    button:active {
-      background-color: #338049;
-      transform: scale(0.95);
-    }
+button:hover {
+  background-color: #77b3e2;
+  color: rgb(56, 54, 54);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.6);
+}
 
 #message {
-  margin: 20px auto;
-  margin-bottom: 20px;
-  width: 300px;
-  padding: 10px;
-  background-color: transparent;
-  color: #fff;
-  opacity: 0;
+  text-align: center;
+  margin-top: 15px;
+  color: #e74c3c;
   transition: opacity 0.5s ease;
   height: 0;
   overflow: hidden;
@@ -90,5 +80,4 @@ button {
 #message.active {
   opacity: 1;
   height: auto;
-  margin-bottom: 20px;
 }
